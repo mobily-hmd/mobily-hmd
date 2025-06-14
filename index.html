@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the latest smartphones and accessories at unbeatable prices." />
+  <title>PhoneStore | Latest Smartphones & Accessories</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">PhoneStore</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="smartphones.html" target="_blank">Smartphones</a></li>
+        <li><a href="accessories.html" target="_blank">Accessories</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-slider">
+      <img src="images/hero1.jpg" alt="Latest Smartphones" />
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured">
+    <h2>Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/phone1.jpg" alt="Phone 1" />
+        <h3>iPhone 14 Pro</h3>
+        <p>$999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/phone2.jpg" alt="Phone 2" />
+        <h3>Samsung Galaxy S24</h3>
+        <p>$899</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>New Arrivals</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/phone3.jpg" alt="Phone 3" />
+        <h3>Xiaomi 14</h3>
+        <p>$599</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Pages -->
+  <!-- Smartphones Category Page -->
+  <section class="category" id="smartphones">
+    <h2>Smartphones</h2>
+    <div class="filters">
+      <label>Brand:</label>
+      <select>
+        <option>All</option>
+        <option>Apple</option>
+        <option>Samsung</option>
+        <option>Xiaomi</option>
+      </select>
+      <label>Price:</label>
+      <input type="range" min="100" max="2000" />
+    </div>
+    <div class="product-grid">
+      <!-- Same product layout reused here -->
+    </div>
+  </section>
+
+  <!-- Accessories Category Page -->
+  <section class="category" id="accessories">
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/accessory1.jpg" alt="Case" />
+        <h3>iPhone Case</h3>
+        <p>$29</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Page Example -->
+  <section class="product-detail">
+    <div class="images">
+      <img src="images/phone1.jpg" alt="iPhone 14 Pro" />
+      <!-- More angles -->
+    </div>
+    <div class="details">
+      <h1>iPhone 14 Pro</h1>
+      <p>Experience the next generation smartphone with A16 Bionic chip and ProMotion display.</p>
+      <ul>
+        <li>256GB Storage</li>
+        <li>48MP Camera</li>
+        <li>Face ID</li>
+      </ul>
+      <p>$999</p>
+      <button>Add to Cart</button>
+      <div class="share">Share on:
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="reviews">
+      <h3>User Reviews</h3>
+      <p>★★★★☆ - Excellent performance and camera!</p>
+    </div>
+  </section>
+
+  <!-- Cart and Checkout -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul>
+      <li>iPhone 14 Pro - $999 <button>Remove</button></li>
+    </ul>
+    <p>Total: $999</p>
+    <button>Proceed to Checkout</button>
+  </section>
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <select required>
+        <option>Credit Card</option>
+        <option>PayPal</option>
+      </select>
+      <button>Place Order</button>
+    </form>
+  </section>
+
+  <!-- User Account Features -->
+  <section class="user-account">
+    <h2>Your Account</h2>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button>Login</button>
+      <a href="#">Forgot password?</a>
+    </form>
+  </section>
+
+  <!-- About Us Page -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>PhoneStore is dedicated to bringing you the latest smartphones and accessories at the best prices. Our mission is to deliver exceptional value and service with every purchase.</p>
+  </section>
+
+  <!-- Contact Page -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button>Send Message</button>
+    </form>
+    <p>Email: support@phonestore.com | Phone: +213-123-456-789</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-info">
+      <p>&copy; 2025 PhoneStore. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
