@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mobily HMD Store</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mobily HMD</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <header class="container">
-    <h1 class="logo">Mobily HMD</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#hot">Hot Products</a>
-      <a href="#new">New Arrivals</a>
-      <a href="#promo">Promotions</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <div class="container">
+      <h1 class="logo">Mobily HMD</h1>
+      <nav>
+        <a href="#hot">Hot Products</a>
+        <a href="#new">New Products</a>
+        <a href="#promo">Promotions</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <h2>Welcome to Mobily HMD</h2>
-      <p>Your destination for quality mobile accessories at great prices.</p>
-      <a href="#hot" class="btn">Shop Now</a>
+      <p>Your one-stop shop for mobile accessories</p>
+      <a href="#hot" class="btn">Explore Now</a>
     </div>
   </section>
 
@@ -35,10 +37,11 @@
       <h2>🔥 Hot Products</h2>
       <div class="product-grid">
         <div class="product-card">
-          <img src="https://www.topgros.com/uploads/produits/5290.webp" alt="Anker A30i" />
+          <img src="images/hero.jpg" alt="Anker A30i" />
           <h3>Anker A30i</h3>
           <p>Écouteurs Bluetooth de qualité avec réduction de bruit.</p>
           <p><strong>Prix : 4890 DA</strong></p>
+          <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -50,4 +53,56 @@
       <h2>🆕 New Products</h2>
       <div class="product-grid">
         <div class="product-card">
-          <img src="https://via.placeholder.com/250x250?text=Coming+Soon" alt="New Pro
+          <img src="images/hero.jpg" alt="New Headphones" />
+          <h3>New Headphones</h3>
+          <p>High-quality audio and stylish design.</p>
+          <p><strong>Prix : 3990 DA</strong></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotions -->
+  <section class="products promo-section" id="promo">
+    <div class="container">
+      <h2>💥 Promotions</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/hero.jpg" alt="Promo Earbuds" />
+          <h3>Promo Earbuds</h3>
+          <p>Best deal of the week, limited time only!</p>
+          <p><strong>Prix : 2990 DA</strong></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide original accessories from trusted brands.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>WhatsApp us: 0777 77 77 77</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mobily HMD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
