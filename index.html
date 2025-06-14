@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mobily HMD</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📞 +213 557 00 59 25 | ✉️ contact@mobily-hmd.com</span>
+      <span class="social-icons">
+        <a href="#">FB</a> | <a href="#">IG</a>
+      </span>
+    </div>
+  </div>
+
   <!-- Header -->
   <header>
     <div class="container header-container">
       <div class="logo">Mobily HMD</div>
-      <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#produits">Produits</a>
-        <a href="#promotions">Promotions</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <input type="text" id="search" placeholder="Rechercher un produit...">
+      <div class="cart-icon">🛒</div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="accueil">
-    <div class="container">
-      <h1>Accessoires de téléphonie de qualité</h1>
-      <p>Découvrez notre sélection exclusive d'accessoires pour smartphones</p>
-      <a href="#produits" class="btn">Voir les produits</a>
-    </div>
+  <section class="hero">
+    <h1>Bienvenue chez Mobily HMD</h1>
+    <p>Votre destination pour les meilleurs accessoires de téléphones en Algérie</p>
+    <a href="#products" class="btn">Voir nos produits</a>
   </section>
 
-  <!-- Produits Section -->
-  <section class="products" id="produits">
-    <div class="container">
-      <h2>Nos Produits</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/anker-buds.jpg" alt="Anker Buds">
-          <h3>Écouteurs Anker A30i</h3>
-          <p>Prix: 3 200 DA</p>
-          <button class="add-to-cart">Ajouter au panier</button>
-        </div>
-        <!-- Add more product cards here -->
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Nos Produits</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x200" alt="Produit 1">
+        <h3>Écouteurs Bluetooth Anker A30i</h3>
+        <p>Qualité premium avec réduction de bruit.</p>
+        <button class="add-to-cart">Ajouter au panier</button>
       </div>
     </div>
   </section>
 
-  <!-- Promotions Section -->
-  <section class="promo" id="promotions">
-    <div class="container">
-      <h2>Promotions</h2>
-      <p>Profitez de nos offres spéciales ce mois-ci !</p>
-      <!-- You can add promotional banners or cards here -->
-    </div>
+  <!-- Promotion Section -->
+  <section class="promo">
+    <h2>Offre Spéciale</h2>
+    <p>Profitez de -10% sur votre première commande !</p>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contactez-nous</h2>
-      <p>Appelez-nous au 0550 123 456 ou envoyez un email à contact@mobily-hmd.dz</p>
-    </div>
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Appelez-nous ou envoyez-nous un message pour toute demande.</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Mobily HMD. Tous droits réservés.</p>
-    </div>
+    <p>&copy; <span id="year"></span> Mobily HMD. Tous droits réservés.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
