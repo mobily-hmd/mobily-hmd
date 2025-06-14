@@ -3,12 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galaxy Mobile</title>
+  <title>Mobily HMD</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00d1b2;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d1b2;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background-color: #00d1b2;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00b89c;
+    }
+
+    .products {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 260px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .product-card p {
+      font-weight: bold;
+      color: #00d1b2;
+    }
+
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Galaxy Mobile</h1>
+    <div class="logo">Mobily HMD</div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -20,8 +151,8 @@
   </header>
 
   <section class="hero">
-    <h2>Latest Smartphones, Best Prices</h2>
-    <p>Shop now and get exclusive deals!</p>
+    <h2>Discover the Latest Smartphones</h2>
+    <p>Top brands, unbeatable prices, and fast delivery.</p>
     <a href="#" class="btn">Shop Now</a>
   </section>
 
@@ -29,19 +160,19 @@
     <h2>Featured Phones</h2>
     <div class="product-list">
       <div class="product-card">
-        <img src="https://via.placeholder.com/200x300" alt="Phone 1"/>
+        <img src="https://via.placeholder.com/200x300" alt="iPhone 15 Pro" />
         <h3>iPhone 15 Pro</h3>
         <p>$999</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="https://via.placeholder.com/200x300" alt="Phone 2"/>
+        <img src="https://via.placeholder.com/200x300" alt="Samsung S24 Ultra" />
         <h3>Samsung S24 Ultra</h3>
         <p>$899</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
       <div class="product-card">
-        <img src="https://via.placeholder.com/200x300" alt="Phone 3"/>
+        <img src="https://via.placeholder.com/200x300" alt="Xiaomi 14 Pro" />
         <h3>Xiaomi 14 Pro</h3>
         <p>$699</p>
         <a href="#" class="btn">Buy Now</a>
@@ -50,7 +181,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Galaxy Mobile. All rights reserved.</p>
+    <p>© 2025 Mobily HMD. All rights reserved.</p>
   </footer>
 </body>
 </html>
