@@ -1,125 +1,74 @@
-/* General Reset and Container */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobily HMD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">Mobily HMD</div>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
+  <!-- Hero Section -->
+  <section class="hero" id="accueil">
+    <div class="container">
+      <h1>Accessoires de téléphonie de qualité</h1>
+      <p>Découvrez notre sélection exclusive d'accessoires pour smartphones</p>
+      <a href="#produits" class="btn">Voir les produits</a>
+    </div>
+  </section>
 
-/* Header */
-header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-}
+  <!-- Produits Section -->
+  <section class="products" id="produits">
+    <div class="container">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/anker-buds.jpg" alt="Anker Buds">
+          <h3>Écouteurs Anker A30i</h3>
+          <p>Prix: 3 200 DA</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <!-- Add more product cards here -->
+      </div>
+    </div>
+  </section>
 
-.logo {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
+  <!-- Promotions Section -->
+  <section class="promo" id="promotions">
+    <div class="container">
+      <h2>Promotions</h2>
+      <p>Profitez de nos offres spéciales ce mois-ci !</p>
+      <!-- You can add promotional banners or cards here -->
+    </div>
+  </section>
 
-nav {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p>Appelez-nous au 0550 123 456 ou envoyez un email à contact@mobily-hmd.dz</p>
+    </div>
+  </section>
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mobily HMD. Tous droits réservés.</p>
+    </div>
+  </footer>
 
-/* Hero Section */
-.hero {
-  background-color: #007bff;
-  color: white;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.hero .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: white;
-  color: #007bff;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* Product Sections */
-.products {
-  padding: 40px 0;
-  background-color: white;
-}
-
-.hot-section {
-  background-color: white;
-}
-
-.new-section {
-  background-color: white;
-}
-
-.promo-section {
-  background-color: white;
-}
-
-.products h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  text-align: center;
-}
-
-.product-card {
-  background: white;
-  border-radius: 8px;
-  padding: 16px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* About Section */
-.about {
-  background-color: #f0f0f0;
-  padding: 40px 0;
-  text-align: center;
-}
-
-/* Contact Section */
-.contact {
-  background-color: #eee;
-  padding: 40px 0;
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
+  <script src="script.js"></script>
+</body>
+</html>
