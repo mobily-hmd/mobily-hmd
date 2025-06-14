@@ -40,7 +40,8 @@ nav a {
 
 /* Hero Section */
 .hero {
-  background: #007bff;
+  background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
   color: white;
   padding: 60px 0;
   text-align: center;
@@ -60,18 +61,19 @@ nav a {
 /* Product Sections */
 .products {
   padding: 40px 0;
+  background-color: white;
 }
 
 .hot-section {
-  background-color: #ffeaea;
+  background-color: white;
 }
 
 .new-section {
-  background-color: #eaf6ff;
+  background-color: white;
 }
 
 .promo-section {
-  background-color: #fff9e6;
+  background-color: white;
 }
 
 .products h2 {
