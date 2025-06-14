@@ -1,63 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobily HMD</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <div class="container">
-      <h1 class="logo">Mobily HMD</h1>
+    <div class="container header-container">
+      <div class="logo">Mobily HMD</div>
       <nav>
-        <a href="#hot">Hot Products</a>
-        <a href="#new">New Products</a>
-        <a href="#promo">Promotions</a>
-        <a href="#about">About</a>
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#promotions">Promotions</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="accueil">
     <div class="container">
-      <h2>Welcome to Mobily HMD</h2>
-      <p>Your one-stop shop for mobile accessories</p>
-      <img id="heroImage" src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="Hero" style="width:100%; max-height: 300px; object-fit: cover; margin: 20px 0; border-radius: 10px;">
-      <a href="#hot" class="btn">Explore Now</a>
+      <h1>Accessoires de téléphonie de qualité</h1>
+      <p>Découvrez notre sélection exclusive d'accessoires pour smartphones</p>
+      <a href="#produits" class="btn">Voir les produits</a>
     </div>
   </section>
 
-  <!-- Hot Products -->
-  <section class="products hot-section" id="hot">
+  <!-- Produits Section -->
+  <section class="products" id="produits">
     <div class="container">
-      <h2>🔥 Hot Products</h2>
+      <h2>Nos Produits</h2>
       <div class="product-grid">
         <div class="product-card">
-          <img src="images/hero.jpg" alt="Anker A30i" />
-          <h3>Anker A30i</h3>
-          <p>Écouteurs Bluetooth de qualité avec réduction de bruit.</p>
-          <p><strong>Prix : 4890 DA</strong></p>
-          <button class="add-to-cart">Add to Cart</button>
+          <img src="images/anker-buds.jpg" alt="Anker Buds">
+          <h3>Écouteurs Anker A30i</h3>
+          <p>Prix: 3 200 DA</p>
+          <button class="add-to-cart">Ajouter au panier</button>
         </div>
+        <!-- Add more product cards here -->
       </div>
     </div>
   </section>
 
-  <!-- Other Sections Skipped for Brevity -->
+  <!-- Promotions Section -->
+  <section class="promo" id="promotions">
+    <div class="container">
+      <h2>Promotions</h2>
+      <p>Profitez de nos offres spéciales ce mois-ci !</p>
+      <!-- You can add promotional banners or cards here -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p>Appelez-nous au 0550 123 456 ou envoyez un email à contact@mobily-hmd.dz</p>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; <span id="year"></span> Mobily HMD. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Mobily HMD. Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- Link to JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
