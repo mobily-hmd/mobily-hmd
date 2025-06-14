@@ -1,193 +1,82 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mobily HMD - Boutique</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-bg: #f4f6f9;
-      --card-bg: #ffffff;
-      --header-bg: #0a0a0a;
-      --nav-bg: #202020;
-      --text-color: #111111;
-      --primary-color: #0066ff;
-      --highlight: #25D366;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--main-bg);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--header-bg);
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 600;
-    }
-
-    nav {
-      background-color: var(--nav-bg);
-      display: flex;
-      justify-content: center;
-      padding: 0.8rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1.5rem;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .hero {
-      background-color: white;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
-    .hero h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1rem;
-      color: #333;
-    }
-
-    .products {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 24px;
-      padding: 0 1rem 2rem;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .price {
-      font-size: 1.1rem;
-      color: #28a745;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      background-color: var(--highlight);
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: var(--header-bg);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    .wa-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: var(--highlight);
-      color: white;
-      border-radius: 50%;
-      width: 55px;
-      height: 55px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-  </style>
+  <title>Mobily HMD</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>Mobily HMD</header>
-  <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Accessoires</a>
-    <a href="#">Téléphones</a>
-    <a href="#">Contact</a>
-  </nav>
 
-  <section class="hero">
-    <h1>Bienvenue chez Mobily HMD</h1>
-    <p>Écouteurs Bluetooth, accessoires, téléphones – Livraison à Hassi Messaoud 🇩🇿</p>
-  </section>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">MOBILY HMD</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="products">
-    <div class="card">
-      <img src="product1.jpg" alt="ANKER A30I">
-      <h3>ANKER SOUNDCORE A30I</h3>
-      <div class="price">6200 DZD</div>
-      <a class="whatsapp-button" href="https://wa.me/213557005925?text=Je%20veux%20commander%20les%20ANKER%20A30I%20à%206200DZD">Commander</a>
-    </div>
-    <div class="card">
-      <img src="product1.jpg" alt="ANKER A30I">
-      <h3>ANKER SOUNDCORE A30I</h3>
-      <div class="price">6200 DZD</div>
-      <a class="whatsapp-button" href="https://wa.me/213557005925?text=Je%20veux%20commander%20les%20ANKER%20A30I%20à%206200DZD">Commander</a>
-    </div>
-    <div class="card">
-      <img src="product1.jpg" alt="ANKER A30I">
-      <h3>ANKER SOUNDCORE A30I</h3>
-      <div class="price">6200 DZD</div>
-      <a class="whatsapp-button" href="https://wa.me/213557005925?text=Je%20veux%20commander%20les%20ANKER%20A30I%20à%206200DZD">Commander</a>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Welcome to MOBILY HMD</h2>
+      <p>Your trusted source for original Anker accessories and more.</p>
+      <a href="#products" class="btn">View Products</a>
     </div>
   </section>
 
-  <a class="wa-float" href="https://wa.me/213557005925" title="Commander via WhatsApp">💬</a>
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/anker1.jpg" alt="Anker Charger" />
+          <h3>Anker 20W Charger</h3>
+          <p>Price: 2500 DA</p>
+        </div>
+        <div class="product-card">
+          <img src="images/anker2.jpg" alt="Anker Cable" />
+          <h3>Anker USB-C Cable</h3>
+          <p>Price: 1000 DA</p>
+        </div>
+        <div class="product-card">
+          <img src="images/anker3.jpg" alt="Anker Power Bank" />
+          <h3>Anker Power Bank 10000mAh</h3>
+          <p>Price: 4500 DA</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <p>We specialize in authentic Anker products. Quality guaranteed. Delivered across Algeria.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>📞 +213 555 123 456</p>
+      <p>📱 <a href="https://wa.me/213555123456" target="_blank">Chat on WhatsApp</a></p>
+      <p>📸 <a href="https://instagram.com/mobily_hmd" target="_blank">@mobily_hmd</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Mobily HMD – Tous droits réservés
+    <div class="container">
+      <p>&copy; 2025 Mobily HMD. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
